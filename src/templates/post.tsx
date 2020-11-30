@@ -401,7 +401,7 @@ export const query = graphql`
         }
       }
     }
-    flotiqBlogPost( slug: { eq: $slug }, status: {eq: "public"} ) {
+    flotiqBlogPost( slug: { eq: $slug }) {
       excerpt
       title
       content
