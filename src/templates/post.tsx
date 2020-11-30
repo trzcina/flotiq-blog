@@ -457,7 +457,7 @@ export const query = graphql`
       }
     }
     relatedPostsFromTags: allFlotiqBlogPost(
-      filter:{tags: {elemMatch: {tag: {eq:  $primaryTag } } }, status: {eq: "public"} }
+      filter:{tags: {elemMatch: {tag: {eq:  $primaryTag } } } }
       limit: 5
     ) {
       totalCount
